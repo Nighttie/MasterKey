@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script>
+      function date(){
+        let date=new Date();
+        let day=date.getDate();
+        let month=date.getMonth()+1;
+        let hour=date.getHours();
+        let minutes=date.getMinutes();
+        
+        let todayDate="Today Date : "+day+"/"+month;
+        let todayTime="Today Time : "+hour+" : "+minutes;
+        document.getElementById("date").innerHTML=todayDate;
+        document.getElementById("time").innerHTML=todayTime;
+        
+    }
+    </script>
+    <title>Contact Us!</title>
+</head>
+<body onload="date();">
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" style="color: aliceblue;"><img src="Multimedia/icon.png" width="100" height="80" alt="icon"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html" style="color: aliceblue;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html" style="color: aliceblue;">Our Cars</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="reviews.html" style="color: aliceblue;">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resources.html" style="color: aliceblue;">Resources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html" style="color: aliceblue;">Contact us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bookNow.html" style="color: aliceblue;">Book now</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html" style="color: aliceblue;">About us</a>
+              </li>
+              <li>
+                <a class="nav-link" id="date" style="color: aliceblue;">Date</a> 
+            </li>
+            <li>
+                <a class="nav-link" id="time" style="color: aliceblue;">Time</a>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="contactBanner">
+    </div>
+    <div class="contactBody">
+    <div class="contact-info">
+        <h1>Contact Us :</h1>
+        <h3>  <img src="Multimedia/contact/mail.png" alt="mail">MAIL US : <a style="color: #aa0404;" href="mailto:rent@mkrentacar.com">rent@mkrentacar.com</a></h3>
+        <h3> <img src="Multimedia/contact/call-icon.png" alt="phone">PHONE : <a style="color: #aa0404;" href="tel:+15551234567">+1 (555) 123-4567</a></h3>
+        <h3> <img src="Multimedia/contact/location.png" alt="address"> ADDRESS : <a style="color: #aa0404;" href="https://www.google.com/maps/place/%D8%AF.+%D8%B9%D8%A8%D8%AF%D9%88%D9%86+123%D8%8C+%D8%B9%D9%85%D9%91%D8%A7%D9%86%E2%80%AD/@31.9488751,35.8954277,17z/data=!3m1!4b1!4m5!3m4!1s0x151ca0f330aba521:0x87806d11974bf30f!8m2!3d31.9488706!4d35.8928528?entry=ttu">123 Abdoun Street, Abdoun, Amman, Jordan</a> </h3>
+        <h3> <img src="Multimedia/contact/service-24-7.png" alt="time"> TIMMINGS : <a style="color: #aa0404;">24/7 services</a></h3>
+    </div>
+    <div class="contactForm text-center">
+        <h1>Send us a message : </h1>
+    <form method="post">
+  
+        <div class="form-floating mb-3" data-bs-theme="dark">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
+          <label for="floatingTextarea" style="color: aliceblue;" >Name</label>
+        </div>
+        <div class="form-floating mb-3" data-bs-theme="dark">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+          <label for="floatingInput" style="color: aliceblue;">Email address</label>
+        </div>
+        <div class="form-floating mb-3" data-bs-theme="dark">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+          <label for="floatingTextarea2" style="color: aliceblue;" >Message</label>
+        </div>
+        <button type="submit" class="btn btn-dark mb-3">Submit</button>
+        </form>
+        </div>
+        </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html> 

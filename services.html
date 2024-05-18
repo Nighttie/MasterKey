@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" href="Multimedia/icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script>
+        function date(){
+        let date=new Date();
+        let day=date.getDate();
+        let month=date.getMonth()+1;
+        let hour=date.getHours();
+        let minutes=date.getMinutes();
+        
+        let todayDate="Today Date : "+day+"/"+month;
+        let todayTime="Today Time : "+hour+" : "+minutes;
+        document.getElementById("date").innerHTML=todayDate;
+        document.getElementById("time").innerHTML=todayTime;
+        
+    }
+    </script>
+    <title>Our Cars</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: aliceblue;
+        }
+        .navbar, .card {
+            background-color: #000000;
+        }
+        .card-title, .nav-link {
+            color: aliceblue;
+        }
+        .card-text {
+            color: aliceblue;
+        }
+        .btn {
+            background-color: #aa0404;
+            color: aliceblue;
+        }
+        .servicesBanner {
+            background: url(Multimedia/Cars/banner-web.jpg) no-repeat center center;
+            background-size: cover;
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body onload="date();">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="Multimedia/icon.png" width="100" height="80" alt="icon">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Our Cars</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reviews.html">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources.html">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bookNow.html">Book now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About us</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" id="date" style="color: aliceblue;">Date</a> 
+                    </li>
+                    <li>
+                        <a class="nav-link" id="time" style="color: aliceblue;">Time</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="servicesBanner"></div>
+
+    <div class="container my-5 text-center">
+        <h1 class="text-center mb-5">Our Cars!</h1>
+
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <img src="Multimedia/Cars/Rolls-Royce-Phantom.jpg" class="card-img-top" alt="Rolls Royce Phantom" height="400px">
+                    <div class="card-body">
+                        <h5 class="card-title">Rolls Royce Phantom</h5>
+                        <p class="card-text">
+                            Renting the Rolls-Royce Phantom is an invitation to immerse yourself in timeless elegance and unparalleled luxury.
+                            This iconic motor car defies conventional description—it’s not merely a vehicle; it’s an experience.
+                            Every detail of the Phantom is meticulously crafted. Hinged coach doors allow passengers to step in and out with elegance.
+                            The cabin features 800-fiber optics in the roof, simulating a romantic night sky.
+                            Start your reservation and elevate your journey in the epitome of automotive luxury!
+                        </p>
+                        <a href="bookNow.html" class="btn">Rent car</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <img src="Multimedia/Cars/one-of-one-bentley-continental-gt-speed.webp" class="card-img-top" alt="Bentley Continental GT" height="400px">
+                    <div class="card-body">
+                        <h5 class="card-title">Bentley Continental GT</h5>
+                        <p class="card-text">
+                            The Bentley Continental GT is a masterpiece that seamlessly combines spirited performance with handcrafted luxury.
+                            Designed, engineered, and handcrafted in Britain, this third-generation grand tourer captivates with its artful exterior design and plush cabin.
+                            Under the hood, you’ll find either a V-8 or W-12 engine, both turbocharged for massive power.
+                            Whether you’re cruising comfortably or cornering like a sports car, the Continental GT delivers an unforgettable driving experience.
+                            It’s not just a car, it’s an invitation to explore the finest in automotive craftsmanship.
+                        </p>
+                        <a href="bookNow.html" class="btn">Rent car</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="pagination justify-content-center my-5">
+            <a class="pActive" href="services.html">1</a>
+            <a href="services2.html">2</a>
+            <a  href="services3.html">3</a>
+        </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
